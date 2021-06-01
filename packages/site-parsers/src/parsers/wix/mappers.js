@@ -17,6 +17,7 @@ const componentHandlers = [
 	require( './components/button.js' ),
 	require( './components/video.js' ),
 	require( './components/audio.js' ),
+	require( './components/tpa-widget.js' ),
 	require( './components/twitter-follow.js' ),
 ].reduce( handlerMapper( 'type' ), {} );
 
