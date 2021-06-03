@@ -19,6 +19,7 @@ const componentHandlers = [
 	require( './components/video.js' ),
 	require( './components/audio.js' ),
 	require( './components/anchor.js' ),
+	require( './components/separator.js' ),
 	require( './components/tpa-widget.js' ),
 	require( './components/twitter-follow.js' ),
 ].reduce( handlerMapper( 'type' ), {} );
