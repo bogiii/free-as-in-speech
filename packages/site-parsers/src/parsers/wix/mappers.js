@@ -16,6 +16,7 @@ const componentHandlers = [
 	require( './components/image.js' ),
 	require( './components/image-list.js' ),
 	require( './components/button.js' ),
+	require( './components/button-stylable.js' ),
 	require( './components/video.js' ),
 	require( './components/audio.js' ),
 	require( './components/anchor.js' ),
