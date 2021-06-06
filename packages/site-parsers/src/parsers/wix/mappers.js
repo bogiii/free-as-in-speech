@@ -23,6 +23,7 @@ const componentHandlers = [
 	require( './components/link-bar.js' ),
 	require( './components/separator.js' ),
 	require( './components/tpa-widget.js' ),
+	require( './components/google-map.js' ),
 	require( './components/twitter-follow.js' ),
 ].reduce( handlerMapper( 'type' ), {} );
 
