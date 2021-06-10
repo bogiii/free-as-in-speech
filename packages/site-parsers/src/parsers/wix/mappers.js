@@ -13,6 +13,7 @@ const containerHandlers = [
 ].reduce( handlerMapper( 'componentType' ), {} );
 
 const componentHandlers = [
+	require( './components/html.js' ),
 	require( './components/menu.js' ),
 	require( './components/image.js' ),
 	require( './components/image-list.js' ),
@@ -72,7 +73,7 @@ module.exports = {
 			.filter( Boolean );
 	},
 
-	componentMapper: ( component, meta ) => {
+	componentMapper: async ( component, meta ) => {
 		const type =
 			( component.dataQuery && component.dataQuery.type ) ||
 			getTypeFromComponentPath( component.componentType );
